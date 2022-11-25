@@ -10,7 +10,7 @@ form.addEventListener('submit', (e)=>{
     const inputPeso = e.target.querySelector('#peso');
     const inputAltura = e.target.querySelector('#altura');
     const peso = Number(inputPeso.value);
-    const altura = Number(inputAltura.value);
+    const altura = Number(inputAltura.value)/100;
 
     if(!peso){
         setResultado('Peso inválido', false);
